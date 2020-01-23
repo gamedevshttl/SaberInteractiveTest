@@ -351,3 +351,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Ignoire generate files
+DeserializeListRand.txt
+GeneratedListRand.txt
+SerializeListRand.txt
+SerializeSimpleListRand.txt
