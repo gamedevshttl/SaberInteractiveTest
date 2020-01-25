@@ -2,6 +2,7 @@
 #include <cassert> 
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 #include <random>
 #include <unordered_map>
 
@@ -139,7 +140,7 @@ void ListRand::PrintToFile(const std::string listRandFileName)
 		return;
 
 	for (auto node = head; node != nullptr; node = node->next)
-		outFile << "data = " << node->data << ": rand data = " << node->rand->data << std::endl;
+		outFile << "data = " <<std::setw(15) << node->data << ":    rand pointer data = " << std::setw(15) << node->rand->data << std::endl;
 
 	outFile.close();
 
