@@ -8,8 +8,7 @@
 
 void ListRand::Serialize(std::ostream& stream)
 {
-	if (!stream)
-		return;
+	assert(stream.good());
 
 	if (Empty())
 		return;
@@ -30,8 +29,7 @@ void ListRand::Serialize(std::ostream& stream)
 
 void ListRand::Deserialize(std::istream& stream)
 {
-	if (!stream)
-		return;
+	assert(stream.good());
 
 	Clear();
 
