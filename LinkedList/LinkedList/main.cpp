@@ -10,6 +10,7 @@ int main()
 	//Generate RandList, Serialize, Deserialize
 	testListRand.RunMainTest1();
 
+	//Uncomment RunMainTest2 and RunMainTest3 for separate execute serialize and deserialize test
 	//Generate RandList, Serialize
 	//testListRand.RunMainTest2();
 
