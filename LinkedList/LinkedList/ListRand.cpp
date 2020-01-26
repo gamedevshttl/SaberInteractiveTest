@@ -130,7 +130,7 @@ void ListRand::Print()
 		std::cout << "data = " << node->data << ": rand data = " << node->rand->data << std::endl;
 }
 
-void ListRand::PrintToFile(const std::string listRandFileName)
+void ListRand::PrintToFile(const std::string& listRandFileName)
 {
 	if (Empty())
 		return;

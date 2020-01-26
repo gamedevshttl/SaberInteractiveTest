@@ -24,5 +24,5 @@ public:
 	void PushBack(const std::string& data);
 	void SetRandPointer();
 	void Print();
-	void PrintToFile(const std::string listRandFileName);
+	void PrintToFile(const std::string& listRandFileName);
 };

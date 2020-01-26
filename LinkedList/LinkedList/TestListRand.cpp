@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 
-bool TestListRand::GenerateListRand(const std::string testContentFileName)
+bool TestListRand::GenerateListRand(const std::string& testContentFileName)
 {
 	std::ifstream outFile(testContentFileName.c_str());
 	if (!outFile.is_open()) {
@@ -74,7 +74,7 @@ void TestListRand::SimpleTest()
 	std::cout << std::endl;
 }
 
-void TestListRand::RunMainTest1(const std::string testContentFileName)
+void TestListRand::RunMainTest1(const std::string& testContentFileName)
 {
 	std::cout << "Main test1" << std::endl;
 	listRand.Clear();
@@ -89,7 +89,7 @@ void TestListRand::RunMainTest1(const std::string testContentFileName)
 	std::cout << std::endl;
 }
 
-void TestListRand::RunMainTest2(const std::string testContentFileName)
+void TestListRand::RunMainTest2(const std::string& testContentFileName)
 {
 	std::cout << "Main test2" << std::endl;
 	listRand.Clear();
