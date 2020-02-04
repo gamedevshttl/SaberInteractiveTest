@@ -20,7 +20,7 @@ void ListRand::Serialize(std::ostream& stream)
 	int nodeIdx = 0;
 	for (auto node = head; node != nullptr; node = node->next) {
 		stream << node->data << std::endl;
-		offsetRandNode.insert({ node, nodeIdx++ });
+		offsetRandNode.emplace( node, nodeIdx++ );
 	}
 
 	for (auto node = head; node != nullptr; node = node->next) {
