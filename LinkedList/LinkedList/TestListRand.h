@@ -8,6 +8,8 @@ public:
 	void Serialize();
 	void Deserialize();
 	void SimpleTest();
+	void SimpleCopyMoveTest();
+
 	void RunMainTest1(const std::string& testContentFileName = "Content/TestContent.txt");
 	void RunMainTest2(const std::string& testContentFileName = "Content/TestContent.txt");
 	void RunMainTest3();

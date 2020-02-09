@@ -74,6 +74,36 @@ void TestListRand::SimpleTest()
 	std::cout << std::endl;
 }
 
+void TestListRand::SimpleCopyMoveTest()
+{
+	listRand.Clear();
+	for (int i = 0; i < 10; ++i)
+		listRand.PushBack(std::to_string(i));
+
+	listRand.SetRandPointer();
+
+	std::cout << "Generated list" << std::endl;
+	listRand.Print();
+	
+	{
+		ListRand listRandCopy(listRand);
+
+		std::cout << "Copy Generated list" << std::endl;
+		listRandCopy.Print();
+	}
+
+	{
+		ListRand listRandMove(std::move(listRand));
+
+		std::cout << "Move Generated list" << std::endl;
+		listRandMove.Print();
+	}
+
+	std::cout << "Generated list" << std::endl;
+	listRand.Print();
+	std::cout << std::endl;
+}
+
 void TestListRand::RunMainTest1(const std::string& testContentFileName)
 {
 	std::cout << "Main test1" << std::endl;

@@ -6,6 +6,7 @@ int main()
 {
 	TestListRand testListRand;
 	testListRand.SimpleTest();
+	testListRand.SimpleCopyMoveTest();
 
 	//Generate RandList, Serialize, Deserialize
 	testListRand.RunMainTest1();
